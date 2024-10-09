@@ -1,22 +1,42 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-// dynamic memory allocation:
-class parent{
-    public:
+class parent {
+public:
     int roll;
     string name;
     string lastname;
-
 };
 
-int main()
-{
-    parent*p=new parent;
-    (*p).name="priyanshu";
-    p->lastname="sharma";
-    p->roll=81;
+class student {
+private:
+    string aadhar;
+    string regno;
 
-    cout<<p->name<<" "<<p->lastname<<" "<<p->roll<<endl;
+protected:
+    int classno;
+    char section;
 
+public:
+    int rollno;
+    string name;
+    string lastname;
+
+    student(string ad, string r, int roll, string n, string ln, int cn, char sec)
+        : aadhar(ad), regno(r), rollno(roll), name(n), lastname(ln), classno(cn), section(sec) {}
+};
+
+class details : public student {
+public:
+    details(string ad, string r, int roll, string n, string ln, int cn, char sec)
+        : student(ad, r, roll, n, ln, cn, sec) {}
+
+    void display() {
+        cout << rollno << " " << name << " " << lastname << " " << section << endl;
+    }
+};
+
+int main() {
+    details d("1abc23", "22bcs081", 81, "priyanshu", "sharma", 10, 'A');
+    d.display();
 }

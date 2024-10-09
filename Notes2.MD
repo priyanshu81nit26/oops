@@ -12,3 +12,6 @@ constructor canot be redeclared:
 * inside class if we define constructor then it is automatically inline
 
 * destructor is called in reverse order
+
+* pehle hmesha parents class ka constructor call hota h:
+* but destructor hmesha phle base class ka call hota h

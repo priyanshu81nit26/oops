@@ -38,6 +38,18 @@ it is useful for code reusability: reuse attributes and methods of an existing c
 
 Inheritance is an important pillar of OOP(Object-Oriented Programming). The capability of a class to derive properties and characteristics from another class is called Inheritance. When we write a class, we inherit properties from other classes. So when we create a class, we do not need to write all the properties and functions again and again, as these can be inherited from another class that possesses it. Inheritance allows the user to reuse the code whenever possible and reduce its redundancy.
 
+# level of inheritance:
+1 single level
+2 multilevel
+3 multiple inheritance [ when we inherit from multiple classes]
+
+* syntax: class teacher:public Coder , public Youtuber{}
+
+4 hirearchical inheritance [ base class is there and its multiple children can be there]
+5 hybrid inheritance [multiple + hirearchical]
+6 multipath inheritance[same chize repeat hoti h for one class due to multiple paths]
+* virtual function is used to solve the multiple copies during mutli inheritances
+
 # polymorphism:
 
 The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. For example, A person at the same time can have different characteristics. Like a man at the same time is a father, a husband, an employee. So the same person posses different behavior in different situations. This is called polymorphism.
